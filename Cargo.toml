@@ -1,0 +1,18 @@
+[package]
+name = "map-resize"
+version = "0.1.0"
+authors = ["Nan Jiang <njiang028@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rkv = "0.9.4"
+tempfile = "3"
+ctrlc = "3.1.1"
+
+[patch.crates-io]
+lmdb-rkv = { path = "/Users/njiang/Projects/github/lmdb-rs" }
+rkv = { path = "/Users/njiang/Projects/mozilla/rkv" }
+
+[[bin]]
+name = "resizer"
+path = "src/resizer.rs"
